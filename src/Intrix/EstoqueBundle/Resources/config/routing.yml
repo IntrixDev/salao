@@ -1,0 +1,3 @@
+estoque_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: EstoqueBundle:Default:index }

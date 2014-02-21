@@ -1,0 +1,16 @@
+{# src/Intrix/TemaBundle/Resources/views/top_atalho.html.twig #}
+{% block top_atalhos %}        
+<div id="header" class="wrapper">
+    <div class="logo">
+        <a href="/" title="">
+            <img src="{{ asset('/bundles/tema/images/loginLogo.png') }}" alt="" />
+        </a>
+    </div>
+    <ul class="middleNav">
+        <li class="iMes"><a href="#" title=""><span>{% trans %}Suporte{% endtrans %}</span></a><span class="numberMiddle">9</span></li>
+        <li class="iStat"><a href="#" title=""><span>{% trans %}Estatísticas{% endtrans %}</span></a></li>
+        <li class="iUser"><a href="#" title=""><span>{% trans %}Lista de usuários{% endtrans %}</span></a></li>
+        <li class="iOrders"><a href="#" title=""><span>{% trans %}Painel de Faturamento{% endtrans %}</span></a></li>
+    </ul>
+</div>
+{% endblock %}

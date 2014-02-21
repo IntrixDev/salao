@@ -1,0 +1,24 @@
+{# src/Intrix/TemaBundle/Resources/views/layout.html.twig #}
+<html xmlns="http://www.w3.org/1999/xhtml">
+    {% include 'TemaBundle::header.html.twig' %}
+    <body>
+        <!-- Top navigation bar -->
+        {% include 'TemaBundle::top_navegacao.html.twig' %}
+        {% block body %}{% endblock %}
+        <!-- Footer -->
+        {% include 'TemaBundle::footer.html.twig' %}
+
+        {% block javascript %}
+            {% javascripts 
+                '@TemaBundle/Resources/public/js/jquery/jquery.mim.js'
+                '@TemaBundle/Resources/public/js/jquery/jquery-ui.mim.js'
+                '@TemaBundle/Resources/public/js/plugins/forms/forms.js'
+                '@TemaBundle/Resources/public/js/main.js'
+            %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+    </body>
+
+
+</html>

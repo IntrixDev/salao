@@ -1,0 +1,16 @@
+produto:
+    resource: "@ProdutoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+estoque:
+    resource: "@EstoqueBundle/Resources/config/routing.yml"
+    prefix:   /estoque
+
+profissional:
+    resource: "@ProfissionalBundle/Resources/config/routing.yml"
+    prefix:   /profissional
+
+tema:
+    resource: "@TemaBundle/Resources/config/routing.yml"
+    prefix:   /
+

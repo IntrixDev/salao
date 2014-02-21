@@ -1,0 +1,36 @@
+{# src/Intrix/TemaBundle/Resources/views/top_navegacao.html.twig #}
+{% block top_navegacao %}
+    <div id="topNav">
+        <div class="fixed">
+            <div class="wrapper">
+                <div class="backTo">
+                    <a href="#" title="">
+                        <img src="{{ asset('/bundles/tema/images/icons/topnav/mainWebsite.png') }}" alt="" />
+                        <span>{% trans %}Home{% endtrans %}</span>
+                    </a>
+                </div>
+                <div class="userNav">
+                    <ul>
+                        <li>
+                            <a href="#" title=""><img src="{{ asset('/bundles/tema/images/icons/topnav/register.png') }}" alt="" />
+                                <span>{% trans %}Registrar{% endtrans %}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <img src="{{ asset('/bundles/tema/images/icons/topnav/contactAdmin.png') }}" alt="" />
+                                <span>{% trans %}Contato{% endtrans %}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="">
+                                <img src="{{ asset('/bundles/tema/images/icons/topnav/help.png') }}" alt="" />
+                                <span>{% trans %}Ajuda{% endtrans %}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

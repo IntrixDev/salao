@@ -1,0 +1,3 @@
+profissional_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ProfissionalBundle:Default:index }

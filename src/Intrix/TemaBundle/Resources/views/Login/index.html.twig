@@ -1,0 +1,32 @@
+{# src/Intrix/TemaBundle/Resources/views/Login/index.html.twig #}
+{% extends 'TemaBundle::layout.html.twig' %}
+
+{% block body %}
+<!-- Login form area -->
+<div class="loginWrapper">
+    <div class="loginLogo">
+        <img src="{{ asset('/bundles/tema/images/loginLogo.png') }}" alt="" />
+    </div>
+    <div class="loginPanel">
+        <div class="head"><h5 class="iUser">{% trans %}Login{% endtrans %}</h5></div>
+        <form action="index.html" id="valid" class="mainForm">
+            <fieldset>
+                <div class="loginRow noborder">
+                    <label for="req1">{% trans %}Usuário{% endtrans %}:</label>
+                    <div class="loginInput"><input type="text" name="login" class="validate[required]" id="req1" /></div>
+                </div>
+
+                <div class="loginRow">
+                    <label for="req2">{% trans %}Senha{% endtrans %}:</label>
+                    <div class="loginInput"><input type="password" name="password" class="validate[required]" id="req2" /></div>
+                </div>
+
+                <div class="loginRow">
+                    <div class="rememberMe"><input type="checkbox" id="check2" name="chbox" /><label for="check2">{% trans %}Mantenha-me conectado{% endtrans %}</label></div>
+                    <div class="submitForm"><input type="submit" value="{% trans %}Entrar{% endtrans %}" class="redBtn" /></div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock %}

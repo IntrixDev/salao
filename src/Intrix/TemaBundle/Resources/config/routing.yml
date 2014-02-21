@@ -1,0 +1,7 @@
+tema_login:
+    pattern:  /login
+    defaults: { _controller: TemaBundle:Login:index }
+
+tema_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: TemaBundle:Default:index }
